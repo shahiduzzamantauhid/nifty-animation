@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple anim</title>
+    <style>
+        .s_anim {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .s_anim_div {
+            width: 165px;
+            height: 60px;
+            background: linear-gradient(138.81deg, #F1F8FF 11.67%, rgba(255, 255, 255, 0.92) 80.07%);
+            box-shadow: 0px 0.692689px 9.35823px rgb(129 129 129 / 10%);
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .img-box-inner {
+            background: #FFFFFF;
+            box-shadow: 0px 3.77195px 50.9213px rgba(0, 0, 0, 0.1), inset 0px 0px 69.7811px rgba(0, 0, 0, 0.02);
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin: 5px 5px 5px 0;
+            text-align: center;
+            overflow: hidden;
+            padding: 5px;
+            display: flex;
+            position: relative;
+        }
+
+        .img-box-inner img {
+            margin-top: 5px;
+            padding: 4px;
+        }
+
+        .text_box {
+            margin: 5px 0 0 5px;
+            overflow: hidden;
+        }
+
+        .text_box h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            color: #181818;
+            margin: 0;
+        }
+
+        .s_udderSell1 {
+            animation: tssellShudder1 1s infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 6s;
+            animation-iteration-count: ease;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            padding-left: 15px;
+            overflow: hidden;
+            margin-top: -20px;
+            font-size: 18px;
+        }
+
+        .s_udderSell2 {
+            animation: tssellShudder2 1s infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 4s;
+            animation-iteration-count: ease;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            padding-left: 15px;
+            margin-top: -20px;
+            font-size: 18px;
+        }
+
+        @keyframes tssellShudder1 {
+            0% {
+                transform: translateY(200px);
+            }
+
+            100% {
+                transform: translateY(0);
+                animation-delay: 3s;
+            }
+        }
+
+        @keyframes tssellShudder2 {
+            0% {
+                animation-delay: 3s;
+                transform: translateY(30px);
+            }
+
+
+            100% {
+                transform: translateY(-47px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="simple_anim">
+        <div class="s_anim">
+            <div class="s_anim_div">
+                <div class="img-box-inner">
+                    <img src="https://tradingcafeindia.com/wp-content/themes/twentytwentyone/html/img/nifty.png" alt="">
+                </div>
+                <div class="anim_parent">
+                    <div class="text_box">
+                        <h5>NIFTY50</h5>
+                    </div>
+                    <div class="s_udderSell1">
+                        <h5>-0.74%</h5>
+                    </div>
+                    <div class="s_udderSell2">
+                        <h5>17859.45</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="s_anim_div">
+                <div class="img-box-inner">
+                    <img src="https://tradingcafeindia.com/wp-content/themes/twentytwentyone/html/img/bankneft.png"
+                        alt="">
+                </div>
+                <div class="anim_parent">
+                    <div class="text_box">
+                        <h5>BANKNIFTY</h5>
+                    </div>
+                    <div class="s_udderSell1">
+                        <h5>-0.99%</h5>
+                    </div>
+                    <div class="s_udderSell2">
+                        <h5>42188.8</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="s_anim_div">
+                <div class="img-box-inner">
+                    <img src="https://tradingcafeindia.com/wp-content/themes/twentytwentyone/html/img/sensex.png"
+                        alt="">
+                </div>
+                <div class="anim_parent">
+                    <div class="text_box">
+                        <h5>SENSEX</h5>
+                    </div>
+                    <div class="s_udderSell1">
+                        <h5>-0.75%</h5>
+                    </div>
+                    <div class="s_udderSell2">
+                        <h5>59900.37</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
